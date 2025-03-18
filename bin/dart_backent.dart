@@ -22,6 +22,6 @@ void main() async {
     return Response.notFound('Sahifa topilmadi');
   });
 
-  final server = await io.serve(handler, InternetAddress.anyIPv4, 8080);
+  final server = await io.serve(handler, InternetAddress.anyIPv4, 8086);
   print('Server ishga tushdi: http://${server.address.host}:${server.port}');
 }
